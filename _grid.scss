@@ -1,0 +1,93 @@
+/*
+    col-xs-12
+    col-sm-12
+    col-md-6
+    col-lg-6
+    col-xl-6
+*/
+@import '_var';
+
+$class-names: col-xl, col-lg, col-md, col-sm, col-xs;
+
+
+@media (min-width: 0px){
+    $class-names: col-xl, col-lg, col-md, col-sm, col-xs;
+    @each $current-name in $class-names {
+        @for $i from 1 through 12{
+            .#{$current-name}-#{$i} {
+                width: (($i/12)*100%)-($col-margin);
+                margin-left: $col-margin;
+                float: left;
+            }
+        }
+    }
+}
+
+@media (min-width: $sm-size){
+    $class-names: col-xl, col-lg, col-md, col-sm;
+    @each $current-name in $class-names {
+        @for $i from 1 through 12{
+            .#{$current-name}-#{$i} {
+                width: (($i/12)*100%)-($col-margin);
+                margin-left: $col-margin;
+                float: left;
+            }
+        }
+    }
+}
+
+@media (min-width: $md-size){
+    $class-names: col-xl, col-lg, col-md;
+    @each $current-name in $class-names {
+        @for $i from 1 through 12{
+            .#{$current-name}-#{$i} {
+                width: (($i/12)*100%)-($col-margin);
+                margin-left: $col-margin;
+                float: left;
+            }
+        }
+    }
+}
+
+@media (min-width: $lg-size){
+    $class-names: col-xl, col-lg;
+    @each $current-name in $class-names {
+        @for $i from 1 through 12{
+            .#{$current-name}-#{$i} {
+                width: (($i/12)*100%)-($col-margin);
+                margin-left: $col-margin;
+                float: left;
+            }
+        }
+    }
+}
+
+@media (min-width: $xl-size){
+    $class-names: col-xl;
+    @each $current-name in $class-names {
+        @for $i from 1 through 12{
+            .#{$current-name}-#{$i} {
+                width: (($i/12)*100%)-($col-margin);
+                margin-left: $col-margin;
+                float: left;
+            }
+        }
+    }
+}
+
+.container {
+    width: 100%;
+    font: inherit;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column; 
+    max-width: $max-width;
+    margin: 0 auto;
+}
+
+.row {
+    width: 100%+$col-margin;
+    display: inline-block;
+    margin-top: $row-margin-top;
+    margin-left: -$col-margin;
+}
