@@ -1,0 +1,49 @@
+@import '_var';
+
+.lighr-bg .hover-txt:hover, .dark-bg .hover-txt:hover{
+	color: rgba(255, 255, 255,0.9);
+	transition: $transition-hover;
+}
+
+.high-bg .hover-txt:hover {
+	color: rgba(0, 0, 0,0.9);
+	transition: $transition-hover;
+}
+
+.color-txt {
+	color: $colorTxt;
+}
+
+.super-color-txt {
+	color: $superColorTxt;
+}
+
+.size-big {
+	font-size: $sizeBig;
+}
+
+.size-mid {
+	font-size: $sizeMid;
+}
+
+.size-small {
+	font-size: $sizeSmall;
+}
+
+.dark-bg {
+	background-color: $darkBg;
+	color: rgba(255, 255, 255,0.6);
+  	font-family: 'Oswald', sans-serif;
+}
+
+.light-bg {
+	background-color: $lightBg;
+	color: rgba(255, 255, 255,0.6);
+	font-family: 'Oswald', sans-serif;
+}
+
+.high-bg {
+	background-color: $highBg;
+	color: rgba(0, 0, 0,0.6);
+	font-family: 'Oswald', sans-serif;
+}
