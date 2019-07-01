@@ -1,1 +1,21 @@
 // In this file goes your additional CSS
+
+.box {
+    height: 48vh;
+}
+
+.img {
+    background-image: url(https://media.licdn.com/dms/image/C4D0BAQEh1gyup_7Wnw/company-logo_200_200/0?e=2159024400&v=beta&t=k_y6fr4Y4FlgWV8k1CQlU8XxbbPp40v_N5bh-4-S-xU);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 90px;
+    width: 90px;
+    content: "";    
+    margin-top: 20px;
+}
+
+@media (max-width: 340px) {
+    .box {
+        height: 60vh;
+    }
+}

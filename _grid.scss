@@ -10,21 +10,10 @@
 $class-names: col-xl, col-lg, col-md, col-sm, col-xs;
 
 
-@media (min-width: 0px){
-    $class-names: col-xl, col-lg, col-md, col-sm, col-xs;
-    @each $current-name in $class-names {
-        @for $i from 1 through 12{
-            .#{$current-name}-#{$i} {
-                width: (($i/12)*100%)-($col-margin);
-                margin-left: $col-margin;
-                float: left;
-            }
-        }
-    }
-}
+
 
 @media (min-width: $sm-size){
-    $class-names: col-xl, col-lg, col-md, col-sm;
+    $class-names: col-xs, col-sm;
     @each $current-name in $class-names {
         @for $i from 1 through 12{
             .#{$current-name}-#{$i} {
@@ -37,7 +26,7 @@ $class-names: col-xl, col-lg, col-md, col-sm, col-xs;
 }
 
 @media (min-width: $md-size){
-    $class-names: col-xl, col-lg, col-md;
+    $class-names: col-xs, col-sm, col-md;
     @each $current-name in $class-names {
         @for $i from 1 through 12{
             .#{$current-name}-#{$i} {
@@ -50,7 +39,7 @@ $class-names: col-xl, col-lg, col-md, col-sm, col-xs;
 }
 
 @media (min-width: $lg-size){
-    $class-names: col-xl, col-lg;
+    $class-names: col-xs, col-sm, col-md, col-lg;
     @each $current-name in $class-names {
         @for $i from 1 through 12{
             .#{$current-name}-#{$i} {
@@ -63,7 +52,7 @@ $class-names: col-xl, col-lg, col-md, col-sm, col-xs;
 }
 
 @media (min-width: $xl-size){
-    $class-names: col-xl;
+    $class-names: col-xs, col-sm, col-md, col-lg, col-xl;
     @each $current-name in $class-names {
         @for $i from 1 through 12{
             .#{$current-name}-#{$i} {

@@ -6,16 +6,16 @@ $colorTxt: #ff7070;
 $superColorTxt: #ff9f2b;
 
 $font: 'Oswald', sans-serif; 
-$transition-hover: color 1s ease-out;
+$transition-hover: color 0.4s ease-out;
 
 $sizeBig: 3.5rem;
 $sizeMid: 2rem;
 $sizeSmall : 1.3rem;
 
-$max-width: 1300px;
-$col-margin: 1%;
+$max-width: auto;
+$col-margin: 0;
 
-$row-margin-top: 2%;
+$row-margin-top: 2vh;
 
 $xs-size: 0px;
 $sm-size: 576px;
