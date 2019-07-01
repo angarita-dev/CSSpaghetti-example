@@ -2,7 +2,7 @@
 
 This is the example page for last project([CSSpaghetti](https://github.com/codingAngarita/CSSpaghetti)) of the Main HTML/CSS curriculum at [Microverse](https://www.microverse.org/) - @microverseinc
 
-#### ([Live version]())
+#### [Live version](https://raw.githack.com/codingAngarita/CSSpaghetti-example/master/index.html)
 
 #### Live ScreenShot of the page
 ![ScreenShot 1](./resources/full-page-pic.png)
