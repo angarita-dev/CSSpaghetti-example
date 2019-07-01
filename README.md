@@ -6,7 +6,6 @@ This is the example page for last project([CSSpaghetti](https://github.com/codin
 
 #### Live ScreenShot of the page
 ![ScreenShot 1](./resources/full-page-pic.png)
-![ScreenShot 1](./resources/full-page-pic-small.png)
 
 
 #### Authors
